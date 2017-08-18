@@ -1,0 +1,36 @@
+{
+  "name": "typenode",
+  "version": "1.0.0",
+  "description": "第一个typescript程序",
+  "main": "./bin/www",
+  "scripts": {
+    "dev": "npm run build && npm run watch",
+    "watch": "concurrently \"npm run watch-ts \" \"npm run watch-app\" ",
+    "build": "tsc",
+    "watch-ts": "tsc -w",
+    "watch-app": "nodemon ./app/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^1.16.4",
+    "@types/cookie-parser": "^1.4.0",
+    "@types/ejs": "^2.3.33",
+    "@types/express": "^4.0.36",
+    "@types/log4js": "^0.0.32",
+    "@types/mssql": "^4.0.5",
+    "@types/node": "^8.0.22",
+    "@types/serve-favicon": "^2.2.28",
+    "@types/socket.io": "^1.4.29"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "log4js": "^2.3.3",
+    "mssql": "^4.0.4",
+    "serve-favicon": "^2.4.3",
+    "socket.io": "^2.0.3"
+  }
+}
